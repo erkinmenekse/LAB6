@@ -1,0 +1,81 @@
+/*
+#include <iostream>
+using namespace std;
+
+double sum = 0;
+
+void harmonic(int n)
+{
+    if(n == 0)
+    {
+        cout << "Harmonic sum: " << sum << endl;
+    }
+    else
+    {
+        sum += 1.0 / n;
+        harmonic(n - 1);
+    }
+}
+
+int main()
+{
+    int n;
+    cout << "Enter the number: ";
+    cin >> n;
+
+    harmonic(n);
+    return 0;
+}
+*/
+
+
+
+/*
+#include <iostream>
+using namespace std;
+double sum = 0;
+
+void harmonic(int n)
+{
+    if(n == 0)
+    {
+        cout << "Harmonic sum: " << sum << endl;
+    }
+    else
+    {
+        sum += 1.0 / n;
+        harmonic(n - 1);
+    }
+}
+
+void harmonic()
+{
+    static int n;
+
+    static bool inputTaken = false;
+
+    if (!inputTaken) 
+    {
+        cout << "Enter a number: ";
+        cin >> n;
+        inputTaken = true;
+    }
+
+    if(n == 0)
+    {
+        cout << "Harmonic sum : " << sum;
+    }
+    else
+    {
+        sum += (1.0 / n);
+        n--;
+        harmonic();
+    }
+}
+
+int main()
+{
+    harmonic();
+    return 0;
+}
+*/
