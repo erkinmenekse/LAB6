@@ -1,0 +1,38 @@
+#import math
+
+#def factorial(x):
+#    if x == 0 or x == 1:
+#        return 1
+#    else:
+#        return x * factorial(x - 1)
+
+#step = lambda x, n: ((-1)**n * (x**(2*n + 1))) / factorial(2*n + 1)
+
+#def sine_x(x_degrees, n):
+#    x = math.radians(x_degrees)
+#    result = 0
+#    for i in range(n):
+#        result += step(x, i)
+#    return result
+
+#angle = float(input("x açısını (derece cinsinden) girin: "))
+#terms = int(input("Toplam terim sayısını (n) girin: "))
+
+#print(f"sin({angle}) ≈ {sine_x(angle, terms)}"
+
+#harmonic_sum = 0
+
+#def harmonic(n):
+#    """
+#    Recursively calculates the harmonic number H_n using a global variable.
+#    Does not return anything. Prints the result when n reaches 0.
+#    """
+#    global harmonic_sum
+#    if n == 0:
+#        print(f"Harmonic sum: {harmonic_sum}")
+#    else:
+#        harmonic_sum += 1 / n
+#        harmonic(n - 1)
+
+#n = int(input("n değerini girin: "))
+#harmonic(n)
